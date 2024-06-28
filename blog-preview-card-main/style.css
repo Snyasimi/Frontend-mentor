@@ -19,14 +19,15 @@ figure{
 body{
 	font-size:14px;
 	font-family:figtree;
-	min-height:100vh;
+	
 	display:flex;
-	justify-content:center;
-	flex-flow:column wrap;
+	justify-content:space-around;	
 	background-color:hsl(47, 88%, 63%);
 }
 
 main{
+	display:flex;
+	justify-content:center;
 	border-radius:10px;
 	padding:1em;
 }
@@ -36,7 +37,6 @@ main{
 	box-shadow:10px 10px black;
 	background-color:white;
 	border-radius:15px;
-	box-sizing:border-box;
 	padding:2em;
 	
 
@@ -75,3 +75,11 @@ main{
 }
 
 
+@media( min-width:1000px){
+	.card{
+		max-width:40%;
+	}
+	main{
+		fus
+	}
+}
