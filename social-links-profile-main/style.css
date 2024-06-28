@@ -1,0 +1,84 @@
+@font-face{
+	font-family:"inter";
+	src:url("assets/fonts/inter-regular-webfont.woff2") format("woff2");
+}
+
+body{
+	background-color:HSL(0, 0%, 8%);
+	color:white;
+	font-weight:bold;
+	font-family:inter;
+	font-size:14px;
+}
+figure{
+	display:flex;
+	justify-content:center;
+}
+img{
+	max-width:5rem;
+	border-radius:50%;
+	object-fit:contain;
+	justify-self:center;
+}
+	
+main{
+	display:flex;
+	justify-content:center;
+	padding:1rem;
+}
+
+.card{
+	border-radius:20px;
+	background-color:hsl(0, 0%, 12%);
+	
+	padding:1em;
+}
+
+article{
+	text-align:center;
+
+	p:first-child{
+		font-size:1.5em;
+		font-weight:bold;
+	}
+	p:nth-of-type(2){
+		font-size:1em;
+		color:hsl(75, 94%, 57%);
+		font-weight:bold;
+	}
+	
+}
+
+
+ul {
+	list-style-type:none;
+	padding:5px;
+	
+	
+	li{
+		display:block;
+		margin:1em;
+		align-content:center;
+		text-align:center;
+		padding:10px;
+		background-color:hsl(0, 0%, 20%);
+		height:2.5em;
+		border-radius:10px;
+
+	}
+
+	li:hover{
+		color:black;
+		background-color:hsl(75, 94%, 57%);
+	}
+}
+
+
+@media(min-width:1000px){
+
+	.card{
+		min-width:30%;
+		margin:10%;
+	
+	}
+}
