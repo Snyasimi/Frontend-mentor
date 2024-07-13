@@ -1,0 +1,76 @@
+@font-face {
+    font-family: young;
+    src: url("https://fonts.google.com/specimen/Young+Serif") format('WOFF2');
+}
+
+
+img{
+    max-width: 100%;
+}
+strong{
+    color: hsl(24, 5%, 18%);
+}
+
+h3{
+    color:hsl(14, 45%, 36%);
+}
+.preparation{
+    
+    background-color:hsl(30, 54%, 90%);
+    border-radius: 10px;
+    padding:.1em;
+    h3{
+        color:hsl(332, 51%, 32%) ;
+        margin-left:1em;
+        
+    }
+}
+
+body{
+    background-color:hsl(0, 0%, 100%);
+    font:  young;
+    font-size:1.5em;
+    color:hsl(24, 5%, 18%);
+}
+
+section{
+    padding:1em;
+
+    
+}
+section > article{
+    border-bottom:1px hsl(24, 5%, 18%) solid;
+}
+table{
+  
+    text-align: center;
+    padding:5px;
+    border-collapse: collapse;
+    min-width:100%;
+    
+}
+tr:has( + tr){
+    border-bottom: 1px solid hsl(24, 5%, 18%);
+}
+
+@media (min-width:1000px){
+    
+    .banner{
+        padding:1.5em;
+        img{
+            border-radius: 15px;
+        }
+    }
+
+    body{
+        font-size: 1em;
+        background-color: hsl(30, 54%, 90%);
+    }
+    main{
+        margin: auto;
+        max-width: 50%;
+        background-color: hsl(330, 100%, 98%);
+        border-radius: 15px;
+    }
+
+}
