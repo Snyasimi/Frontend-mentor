@@ -1,0 +1,164 @@
+body{
+
+	font-size:1em;
+	color:hsl(234,29%,20%);
+	font-family:robotoregular;
+}
+
+input{
+
+	display:block;
+	border-radius:1em;
+	line-height:3;
+	min-width:100%;
+	margin-top:.5em;
+}
+
+button{
+	margin-top:1em;
+	text-align:center;
+	line-height:3;
+	min-width:100%;
+	border-radius:1em;
+	background-color:hsl(234,29%,20%);
+	color:white;
+}
+label{
+
+	color:hsl(231,7%,60%);
+}
+
+figure{
+
+	margin:0px;
+}
+
+img{
+
+	width:100%;
+}
+
+main{
+
+	margin:auto;
+	
+}
+
+dialog{
+
+	padding:1rem;
+	border:1px solid white;
+	border-radius:1rem;
+
+}
+
+dialog > img{
+
+	max-width:20%;
+}
+button:hover{
+	
+	background:linear-gradient(to right, hsl(4, 100%, 67%), hsl(4, 50%, 60%));
+
+}
+
+
+
+.card{
+
+	display:grid;
+	grid-template-rows:repeat(2,auto);
+	background-color:white;
+	border-radius:2rem;
+}
+
+.card-content{
+
+	padding:1em;
+}
+article > h1 {
+
+	font-size:2.5em;
+	font-weight:400;
+	font-family:robotobold;
+}
+
+.services{
+
+	list-style-image:url("assets/images/icon-list.svg");
+	
+}
+.services > li{
+
+	padding:.5em;
+}
+
+/* LARGE SCREENS */
+
+@media (min-width:1000px){
+
+	body{
+
+		background-color:hsl(235, 18%, 26%);
+	}
+
+	main{
+		display:flex;
+
+
+	}
+z
+	dialog{
+
+		max-width:20%;
+	}
+
+	.card{
+
+		margin:auto;
+		display:flex;
+		flex-flow:row-reverse wrap;
+	}
+
+	.card > *{
+		padding:1rem;
+		flex:0 1 auto;
+		
+	}
+}
+
+
+
+
+@font-face {
+	    font-family: 'robotobold';
+	        src: url('assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+		         url('assets/fonts/roboto-bold-webfont.woff') format('woff');
+			     font-weight: normal;
+			         font-style: normal;
+
+			 }
+
+
+
+
+			 @font-face {
+				     font-family: 'robotoitalic';
+				         src: url('assets/fonts/roboto-italic-webfont.woff2') format('woff2'),
+					          url('assets/fonts/roboto-italic-webfont.woff') format('woff');
+						      font-weight: normal;
+						          font-style: normal;
+
+						  }
+
+
+
+
+						  @font-face {
+							      font-family: 'robotoregular';
+							          src: url('assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+								           url('assets/fonts/roboto-regular-webfont.woff') format('woff');
+									       font-weight: normal;
+									           font-style: normal;
+
+									   }
