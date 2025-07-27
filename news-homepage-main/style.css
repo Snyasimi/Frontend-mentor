@@ -3,27 +3,30 @@ img{
 	width:100%;
 }
 
+a{
+
+	text-decoration:none;
+}
+
 body{
 
 	display:flex;
 	flex-flow:column wrap;
-	border:2px solid red;
-	min-height:100dvh;
-	padding:1rem;
+	
 }
 
 nav{
 
 
 	padding:0;
-	border:2px solid green;
+	
 	display:flex;
 
 }
 nav > figure {
 
 	fdlex:2;
-	border:2px solid yellow;
+	
 }
 
 .nav-links{
@@ -32,40 +35,41 @@ nav > figure {
 	margin-left:auto;
 	list-style-type:none;
 	display:flex;
-	border:2px solid red;
+	
 
 	li > a{
 
 		display:block;
 		color:hsl(236, 13%, 42%);
 		text-decoration:none;
-		border:2px solid black;
+		
 		padding:.5rem;
 
+	}
+	li > a:hover{
+
+		color:hsl(5, 85%, 63%);
 	}
 }
 
 main{ 
-	border:2px solid yellow;
-	padding:2rem;
+	
+	pjadding:2rem;
 	margin:auto;
+	min-height:100dvh;
 	display:grid;
 	grid-template-rows:2fr 1fr;
 
 }
 .banner{
-	display:flex;
-	gap:1rem;	
+	display:grid;
+	grid-template-columns:2fr 1fr;
+	gap:.5rem;	
 }
 
 .banner > *{
 
-	border:2px solid green;
-}
-.banner-headline{
 	
-	border:2px solid green;
-	min-width:70%;
 }
 
 .headline-desc{
@@ -78,6 +82,31 @@ main{
 	flex:1;
 }
 
+.headline-link{
+
+	display:block;
+	margin-top:1rem;
+	line-height:2;
+	padding:.5rem;
+	color:hsl(240, 100%, 5%);
+	background-color:hsl(5, 85%, 63%);
+	text-decoration:none;
+	max-width:30%;
+	text-align:center;
+
+}
+.headline-link:hover{
+
+	color:hsl(240, 100%, 5%);
+}
+
+.banner-recents{
+
+	padding:1rem;
+	background-color:hsl(240, 100%, 5%);
+	color:white;
+}
+
 .recent-news{
 
 	padding:0;
@@ -87,11 +116,92 @@ main{
 	min-height:100%;
 	li{
 		flex:1;
-		padding:.5rem;
+	}
+	li:nth-child(2){
+		border-bottom: 1px solid white;
+		border-top: 1px solid white;
 	}
 }
-.banner-recents{
 
-	padding:1rem;
+.banner-recents > h2{
+
+	color:hsl(35, 77%, 62%);
 }
+.adverts{
+
+	display:flex;
+	flex-flow:row;
+	
+}
+
+
+.advert{
+	flex:1;
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	padding:0;
+}
+
+.advert > figure{
+
+	max-width:50%;
+}
+
+.advert-header > a:hover{
+	
+	color:hsl(5, 85%, 63%);
+
+}
+.advert-id{
+
+	color:hsl(5, 85%, 63%);
+}
+
+.advert-header{
+
+}
+
+.advert-desc{
+
+
+}
+
+
+.is-primary:hover{
+
+	color:hsl(35, 77%, 62%);
+}
+
+@media(max-width:800px){
+
+	main{
+		display:grid;
+		
+		grid-template-rows:repeat(2,1fr);
+	}
+	.banner{
+
+		display:grid;
+		grid-template-columns: auto;
+	}
+	.banner-headline{
+		display:grid;
+		grid-template-columns: auto;
+	}
+
+	.headline-desc{
+
+		display:grid;
+		grid-template-columns:auto;
+	}
+	.adverts{
+
+		display:flex;
+		flex-flow:column;
+		
+	}
+
+
+}
+
 
